@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دورات شرعية مميزة تشمل التجويد، الفقه، أصول الفقه، مصطلح الحديث، التاريخ والسير، والمواعظ.">
+    <meta name="keywords" content="التجويد, الفقه, أصول الفقه, مصطلح الحديث, التاريخ, السير, مواعظ">
+    <meta name="author" content="اسمك هنا">
+    <title>الدورات الشرعية</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <header>
+        <h1>الدورات الشرعية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="courses.html" class="active">الدورات</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="maton.html">المتون العملية</a></li> <!-- التبويب الجديد -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>تصفح الدورات</h2>
+            <div class="tabs">
+                <!-- تبويبات -->
+                <button class="tab-button active" onclick="showTab('tajweed')">التجويد الميسر</button>
+                <button class="tab-button" onclick="showTab('fiqh')">الفقه الإسلامي</button>
+                <button class="tab-button" onclick="showTab('usool')">أصول الفقه</button>
+                <button class="tab-button" onclick="showTab('hadith')">مصطلح الحديث</button>
+                <button class="tab-button" onclick="showTab('history')">التاريخ والسير</button>
+                <button class="tab-button" onclick="showTab('advice')">المواعظ</button>
+            </div>
+
+            <!-- محتوى التبويبات -->
+            <div class="tab-content" id="tajweed" style="display: block;">
+                <h3>التجويد الميسر</h3>
+                <p>دورة تعلم أحكام التجويد بطريقة ميسرة، مع أمثلة تطبيقية.</p>
+                <ul>
+                    <li>مخارج الحروف وصفاتها</li>
+                    <li>أحكام النون الساكنة والتنوين</li>
+                    <li>أحكام المدود</li>
+                    <li><a href="course-videos.html">دورة التجويد الميسر</a></li>
+                    <li><a href="course_videos.html" target="_blank">دورة التجويد الميسر</a></li>
+                    <li><a href="another_course.html" target="_blank">دورة الفقه الإسلامي</a></li>
+                    <li><a href="tgwed.html" target="_blank">دورة الفقه الإسلامي</a></li>
+                   
+
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="fiqh">
+                <h3>الفقه الإسلامي</h3>
+                <p>دورة شاملة في الفقه الإسلامي من العبادات إلى المعاملات.</p>
+                <ul>
+                    <li>فقه الطهارة والصلاة</li>
+                    <li>فقه الزكاة والصوم</li>
+                    <li>فقه الأسرة والمعاملات المالية</li>
+                    <li><a href="course-videos.html">دورة الفقه الاسلامي</a></li>
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="usool">
+                <h3>أصول الفقه</h3>
+                <p>دورة تعريفية بأصول الفقه الإسلامي وقواعده الأساسية.</p>
+                <ul>
+                    <li>أدلة الأحكام الشرعية</li>
+                    <li>القياس والاستحسان</li>
+                    <li>أصول الاجتهاد</li>
+                    <li><a href="course-videos.html">دورة اصول الفقه</a></li>
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="hadith">
+                <h3>مصطلح الحديث</h3>
+                <p>دورة تعلم علم الحديث ومصطلحاته الأساسية.</p>
+                <ul>
+                    <li>أنواع الحديث</li>
+                    <li>رواة الحديث وتوثيقهم</li>
+                    <li>تصحيح وتضعيف الأحاديث</li>
+                    <li><a href="course-videos.html">دورة علم الحديث</a></li>
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="history">
+                <h3>التاريخ والسير</h3>
+                <p>دورة في السيرة النبوية والتاريخ الإسلامي.</p>
+                <ul>
+                    <li>السيرة النبوية</li>
+                    <li>الخلفاء الراشدون</li>
+                    <li>الدولة الأموية والعباسية</li>
+                    <li><a href="course-videos.html">دورة التاريخ الاسلامي</a></li>
+
+                </ul>
+            </div>
+
+            <div class="tab-content" id="advice">
+                <h3>المواعظ</h3>
+                <p>دورة مواعظ مستفادة من القرآن الكريم والسنة النبوية.</p>
+                <ul>
+                    <li>قصص الأنبياء</li>
+                    <li>حكم ومواعظ إسلامية</li>
+                    <li>إرشادات لحياة طيبة</li>
+                    <li><a href="course-videos.html">دورة مواعظ </a></li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق النشر &copy; 2024 طريق الهداية للعلوم الشرعية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // إخفاء جميع المحتويات
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            // عرض المحتوى المحدد
+            document.getElementById(tabId).style.display = 'block';
+
+            // إزالة الحالة النشطة من كل الأزرار
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            // إضافة الحالة النشطة للزر الحالي
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

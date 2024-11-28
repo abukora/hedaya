@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متن التجويد الميسر</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>متن التجويد الميسر</h1>
+        <p><strong>المؤلف:</strong> الشيخ / فلان الفلاني</p>
+        <p><strong>الطبعة:</strong> الطبعة الأولى - دار النشر الفلانية</p>
+
+    </header>
+  
+    
+    <main>
+        <section id="tajweed-content">
+           
+            <!-- التبويبات لعرض أجزاء من المتن -->
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'part1')">الفصل الأول</button>
+                <button class="tablinks" onclick="openTab(event, 'part2')">الفصل الثاني</button>
+                <button class="tablinks" onclick="openTab(event, 'part3')">الفصل الثالث</button>
+            </div>
+
+            <div id="part1" class="tabcontent">
+                <h3>الفصل الأول: مقدمة في التجويد</h3>
+                <p>المقدمة</p>
+                <ol>
+                    <li>يقول راجي عفو رب سامعِ (محمد بن الجزريِّ الشافعي)</li>
+                    <li>(الحمد لله) وصلَّى اللهُ على نبيه ومصطفاهُ</li>
+                    <li>(محمدٍ) وآله وصحبه ومقرئ القرآن مع محبه</li>
+                    <li>(وبعد) إن هذه مقدِّمه[1] فيما على قارئه أن يعلمَه</li>
+                    <li>إذ واجبٌ عليهمُ محتمُ قبل الشروع أولاً أن يعلمُوا</li>
+                    <li>مخارجَ الحروف والصفات ليلفظوا بأفصحِ اللغات</li>
+                    <li>محرري التجويد والمواقف وما الذي رسم في المصاحف</li>
+                    <li>من كل مقطوع وموصول بها وتاء أنثى لم تكن تكتب بها</li>
+                </ol>
+            </div>
+            
+            <div id="part2" class="tabcontent">
+                <h3>الفصل الثاني: مخارج الحروف وصفاتها</h3>
+                <p>في هذا الفصل، يتم تناول المخارج الصحيحة للحروف وصفاتها، مع توضيح كيفية نطق الحروف بشكل صحيح...</p>
+            </div>
+
+            <div id="part3" class="tabcontent">
+                <h3>الفصل الثالث: أحكام المدود والتنوين</h3>
+                <p>يتناول هذا الفصل تفاصيل عن أحكام المدود والتنوين وكيفية إتقان نطقها...</p>
+            </div>
+
+            <p>يمكنك تحميل المتن بصيغة PDF: <a href="tajweed_mيسر.pdf" target="_blank">تحميل المتن</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 طريق الهداية للعلوم الشرعية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // دالة لفتح التبويبات
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // تعيين التبويب الأول ليظهر بشكل افتراضي عند تحميل الصفحة
+        document.getElementsByClassName("tablinks")[0].click();
+    </script>
+</body>
+</html>

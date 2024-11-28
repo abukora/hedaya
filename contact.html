@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تواصل معنا عبر البريد الإلكتروني، رقم الهاتف، أو قناة اليوتيوب.">
+    <meta name="keywords" content="اتصل بنا, بريد إلكتروني, قناة يوتيوب, رقم هاتف">
+    <meta name="author" content="اسمك هنا">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>اتصل بنا</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="courses.html">الدورات</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                <li><a href="maton.html">المتون العملية</a></li> <!-- التبويب الجديد -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>معلومات التواصل</h2>
+            <p>يسعدنا تواصلكم معنا للحصول على المزيد من المعلومات أو للاستفسار عن دوراتنا الشرعية.</p>
+            <ul>
+                <li><strong>رقم الهاتف:</strong> <a href="tel:00201064526023">00201064526023</a></li>
+                <li><strong>البريد الإلكتروني:</strong> 
+                    <a href="mailto:abukora@outlook.com">abukora@outlook.com</a>, 
+                    <a href="mailto:mohamedkoru859@gmail.com">mohamedkoru859@gmail.com</a>
+                </li>
+                <li><strong>قناة اليوتيوب:</strong> <a href="https://www.youtube.com/@abukora" target="_blank">https://www.youtube.com/@abukora</a></li>
+            </ul>
+        </section>
+
+        <section id="contact-form">
+            <h2>أرسل لنا رسالة</h2>
+            <form action="mailto:mohamedkoru859@gmail.com" method="post" enctype="text/plain">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="5" placeholder="أدخل رسالتك هنا" required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق النشر &copy; 2024 طريق الهداية للعلوم الشرعية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
