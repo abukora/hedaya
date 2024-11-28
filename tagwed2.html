@@ -63,10 +63,11 @@
         .controls {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin: 20px 0;
         }
 
-        .controls button {
+        .controls button, .controls select {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -115,6 +116,17 @@
 
         <div class="controls">
             <button id="prev-btn" onclick="prevVideo()" disabled>السابق</button>
+            
+            <!-- القائمة المنسدلة -->
+            <select id="video-select" onchange="selectVideo()">
+                <option value="0">مقدمة الدورة</option>
+                <option value="1">تنبهات هامة للطلاب والطالبات</option>
+                <option value="2">بسم الله الرحمن الرحيم</option>
+                <option value="3">البسملة من سورة الفاتحة</option>
+                <option value="4">الحمد لله رب العالمين</option>
+                <option value="5">الرحمن الرحيم</option>
+            </select>
+
             <button id="next-btn" onclick="nextVideo()">التالي</button>
         </div>
     </main>
@@ -164,6 +176,7 @@
         const lectureDescription = document.getElementById("lecture-description");
         const prevBtn = document.getElementById("prev-btn");
         const nextBtn = document.getElementById("next-btn");
+        const videoSelect = document.getElementById("video-select");
 
         // متغير لمتابعة الفيديو الحالي
         let currentVideoIndex = 0;
@@ -174,6 +187,7 @@
             videoFrame.src = `https://www.youtube.com/embed/${video.id}`;
             lectureTitle.textContent = video.title;
             lectureDescription.textContent = video.description;
+            videoSelect.value = currentVideoIndex;
 
             // التحكم في أزرار السابق والتالي
             prevBtn.disabled = currentVideoIndex === 0;
@@ -194,6 +208,12 @@
                 currentVideoIndex++;
                 updateVideo();
             }
+        }
+
+        // دالة لتغيير الفيديو من القائمة
+        function selectVideo() {
+            currentVideoIndex = parseInt(videoSelect.value, 10);
+            updateVideo();
         }
 
         // تحديث الفيديو عند تحميل الصفحة
