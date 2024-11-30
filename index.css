@@ -206,22 +206,30 @@ footer {
     color: white;
     text-align: center;
     padding: 15px 0; /* زيادة الحشو قليلاً */
-    position: fixed;
-    bottom: 0;
+    position: relative; /* تغيير إلى relative ليظل الفوتر في أسفل المحتوى */
     width: 100%;
     z-index: 999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+    margin-top: 20px; /* إضافة هامش أعلى الفوتر لتجنب تداخله مع المحتوى */
 }
 
+/* التأثير على الفقرات داخل الفوتر */
 footer p {
     margin: 0;
     font-size: 1rem;
     letter-spacing: 1px; /* زيادة تباعد الأحرف قليلاً */
 }
+
+/* التأثير عند التمرير على الفوتر */
 footer:hover {
     background-color: #215c32; /* تغيير اللون عند التمرير */
     color: #fff; /* الحفاظ على النص الأبيض */
     transition: background-color 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+/* لجعل المحتوى يبتعد عن الفوتر إذا كان الفوتر ثابت */
+body {
+    margin-bottom: 100px; /* التأكد من أن المحتوى لا يغطى الفوتر */
 }
 
 
