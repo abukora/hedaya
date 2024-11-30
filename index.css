@@ -16,8 +16,8 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-top: 80px; /* لتجنب تغطية المحتوى بالرأس */
-    padding-bottom: 60px; /* لتجنب تغطية المحتوى بالفوتر */
+    padding-top: 100px; /* تعديل المسافة بين الرأس والشريط */
+    padding-bottom: 80px; /* تعديل المسافة بين الفوتر والمحتوى */
 }
 
 /* تنسيق الرأس */
@@ -207,6 +207,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 999; /* جعل الفوتر في الأسفل */
 }
 
 footer p {
@@ -268,4 +269,9 @@ footer p {
     100% {
         transform: translateX(100%); /* نهاية الحركة لخارج الشاشة من اليمين */
     }
+}
+
+/* إيقاف الشريط عند التمرير بالماوس */
+.ticker-container:hover .ticker {
+    animation-play-state: paused; /* توقف الحركة */
 }
