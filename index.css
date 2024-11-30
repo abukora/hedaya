@@ -240,13 +240,19 @@ footer p {
     padding: 10px 0;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 60px;  /* زيادة المسافة بين الشريط والرأس */
     left: 0;
     width: 100%;
     z-index: 1000; /* تأكد من ظهور الشريط فوق باقي المحتويات */
     font-family: Arial, sans-serif; /* الخط المستخدم في الشريط */
     font-size: 1.2rem;
 }
+
+/* تباعد المحتوى (main) بعد الشريط المتحرك */
+main {
+    padding-top: 80px; /* هذا التعديل يعزز المسافة من أعلى الصفحة بعد الشريط المتحرك */
+}
+
 
 .ticker {
     display: flex;
