@@ -218,6 +218,11 @@ footer p {
     font-size: 1rem;
     letter-spacing: 1px; /* زيادة تباعد الأحرف قليلاً */
 }
+footer:hover {
+    background-color: #215c32; /* تغيير اللون عند التمرير */
+    color: #fff; /* الحفاظ على النص الأبيض */
+    transition: background-color 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
 
 
 /* تحسين التصميم للشاشات الصغيرة */
