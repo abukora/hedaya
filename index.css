@@ -141,6 +141,25 @@ button, .btn {
     text-decoration: none;
     display: inline-block;
 }
+/* تنسيق الزر داخل البطاقة */
+.card .btn {
+    width: 100%; /* اجعل الزر يمتد عبر كامل عرض البطاقة */
+    padding: 15px 20px; /* زيادة الحشو ليصبح الزر أكبر */
+    font-size: 1.2rem; /* زيادة حجم النص داخل الزر */
+    border-radius: 5px; /* جعل الزر ذو حواف مستديرة */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* إضافة تأثير عند التمرير */
+    text-align: center; /* محاذاة النص في وسط الزر */
+    margin-top: 20px; /* إضافة مسافة من الأعلى لتباعد الزر عن النص */
+}
+
+.card .btn:hover {
+    background-color: var(--hover-color); /* تغيير اللون عند التمرير فوق الزر */
+    transform: scale(1.05); /* تكبير الزر قليلاً عند التمرير */
+}
+
+.card .btn:active {
+    transform: scale(0.98); /* تصغير الزر قليلاً عند الضغط عليه */
+}
 
 button:hover, .btn:hover {
     background-color: var(--hover-color);
