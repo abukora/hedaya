@@ -141,6 +141,7 @@ button, .btn {
     text-decoration: none;
     display: inline-block;
 }
+
 /* تنسيق الزر داخل البطاقة */
 .card .btn {
     width: 100%; /* اجعل الزر يمتد عبر كامل عرض البطاقة */
@@ -231,6 +232,7 @@ footer p {
         padding: 20px;
     }
 }
+
 /* تنسيق شريط التمرير */
 .ticker-container {
     background-color: #2a6e3f; /* اللون الأساسي للشريط */
