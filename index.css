@@ -201,7 +201,7 @@ form input:focus, form textarea:focus {
 
 /* الفوتر */
 footer {
-    background-color: #333; /* لون داكن */
+      background-color: #2a6e3f; /* اللون الأساسي للشريط */
     color: #f4f4f4; /* نص بلون فاتح */
     text-align: center;
     padding: 10px 0;
