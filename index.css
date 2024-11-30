@@ -16,7 +16,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-top: 100px; /* تعديل المسافة بين الرأس والشريط */
+    padding-top: 140px; /* زيادة المسافة بين شريط الحركة والمحتوى */
     padding-bottom: 80px; /* تعديل المسافة بين الفوتر والمحتوى */
 }
 
@@ -30,6 +30,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
 }
 
 header h1 {
@@ -232,6 +233,10 @@ footer p {
     .container {
         padding: 20px;
     }
+
+    .ticker-container {
+        top: 80px;  /* تقليل المسافة في الشاشات الصغيرة */
+    }
 }
 
 /* تنسيق شريط التمرير */
@@ -241,7 +246,7 @@ footer p {
     padding: 10px 0;
     overflow: hidden;
     position: fixed;
-    top: 70px;  /* ضبط المسافة بين الشريط والرأس */
+    top: 100px;  /* ضبط المسافة بين الرأس والشريط */
     left: 0;
     width: 100%;
     z-index: 1000; /* تأكد من ظهور الشريط فوق باقي المحتويات */
