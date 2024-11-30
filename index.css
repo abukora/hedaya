@@ -200,20 +200,23 @@ form input:focus, form textarea:focus {
 }
 
 /* الفوتر */
+/* الفوتر */
 footer {
-      background-color: #2a6e3f; /* اللون الأساسي للشريط */
-     color: white;
+    background: linear-gradient(to right, #2a6e3f, #215c32); /* تدرج لوني من الأخضر */
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0; /* زيادة الحشو قليلاً */
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+    letter-spacing: 1px; /* زيادة تباعد الأحرف قليلاً */
 }
 
 
