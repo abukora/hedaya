@@ -201,20 +201,21 @@ form input:focus, form textarea:focus {
 
 /* الفوتر */
 footer {
-    background-color: var(--main-color);
-     color: #f4f4f4; /* نص بلون فاتح */
+    background-color: #333; /* لون داكن */
+    color: #f4f4f4; /* نص بلون فاتح */
     text-align: center;
     padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 999; /* جعل الفوتر في الأسفل */
+    z-index: 999;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
 }
+
 
 /* تحسين التصميم للشاشات الصغيرة */
 @media (max-width: 768px) {
