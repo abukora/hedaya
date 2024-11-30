@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,74 +7,80 @@
     <meta name="author" content="اسمك هنا">
     <meta name="keywords" content="علوم شرعية, دروس, طريق الهداية, تعلم">
     <title>طريق الهداية للعلوم الشرعية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>مرحبًا بكم في طريق الهداية للعلوم الشرعية</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="courses.html">الدورات</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="maton.html">المتون العملية</a></li> <!-- التبويب الجديد -->
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">طريق الهداية</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">الدورات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                        <li class="nav-item"><a class="nav-link" href="maton.html">المتون العملية</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-   <div class="container mt-4">
-    <h2 class="text-center mb-4">الدورات المميزة</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <!-- بداية الدورة الأولى -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">دورة علوم القرآن</h5>
-                    <p class="card-text">تعرف على علوم القرآن الكريم ومفاهيمه.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe 
-                            src="https://www.youtube.com/embed?listType=playlist&list=PLVRT9LvUM-RBQLGd_Vku3paHnOBMPrJkG" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">الدورات المميزة</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- بداية الدورة الأولى -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">دورة علوم القرآن</h5>
+                        <p class="card-text">تعرف على علوم القرآن الكريم ومفاهيمه.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe 
+                                src="https://www.youtube.com/embed?listType=playlist&list=PLVRT9LvUM-RBQLGd_Vku3paHnOBMPrJkG" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-3">الانضمام للدورة</a>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3">الانضمام للدورة</a>
+                </div>
+            </div>
+            <!-- نهاية الدورة الأولى -->
+
+            <!-- تكرار البطاقة مع تعديل المحتوى -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">دورة الحديث الشريف</h5>
+                        <p class="card-text">تعرف على مفاهيم وأسس الحديث النبوي الشريف.</p>
+                        <div class="ratio ratio-16x9">
+                            <iframe 
+                                src="https://www.youtube.com/embed?listType=playlist&list=PLVRT9LvUM-RAzyIWwKeu4dxHbg4whje4t" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-3">الانضمام للدورة</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- نهاية الدورة الأولى -->
-
-        <!-- تكرار بنفس الشكل مع تغيير البيانات -->
-        <div class="col">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">دورة الحديث الشريف</h5>
-                    <p class="card-text">تعرف على مفاهيم وأسس الحديث النبوي الشريف.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe 
-                            src="https://www.youtube.com/embed?listType=playlist&list=PLVRT9LvUM-RAzyIWwKeu4dxHbg4whje4t" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <a href="#" class="btn btn-primary mt-3">الانضمام للدورة</a>
-                </div>
-            </div>
-        </div>
-        <!-- أضف المزيد من البطاقات هنا بنفس التنسيق -->
-
-        
     </div>
-</div>
 
-    <main>
+    <main class="container mt-5">
         <section id="introduction">
             <h2>عن الموقع</h2>
             <p>طريق الهداية للعلوم الشرعية هو موقع يهدف إلى تقديم محتوى تعليمي موثوق ومبسط في مجالات العلوم الشرعية.</p>
         </section>
 
-        <section id="features">
+        <section id="features" class="mt-4">
             <h2>مميزات الموقع</h2>
             <ul>
                 <li>دروس ميسرة في مختلف علوم الشريعة.</li>
@@ -83,25 +89,30 @@
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="mt-4">
             <h2>اتصل بنا</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">البريد الإلكتروني:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">الرسالة:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">إرسال</button>
+            <form action="submit_form.php" method="post" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">الاسم:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">البريد الإلكتروني:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">الرسالة:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">إرسال</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-light text-center mt-5 py-3">
         <p>حقوق النشر &copy; 2024 طريق الهداية للعلوم الشرعية. جميع الحقوق محفوظة.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
