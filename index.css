@@ -164,7 +164,8 @@ a:hover {
 /* تنسيق الفوتر */
 footer {
     background-color: var(--main-color);
-    color: white;
+ color: #333; /* لون داكن للنصوص */
+
     text-align: center;
     padding: 15px 0;
     position: relative;
