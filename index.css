@@ -9,7 +9,6 @@ body {
     color: #333; /* لون النصوص */
 }
 
-
 /* تنسيق الرأس */
 header {
     background-color: #4CAF50;
@@ -155,131 +154,6 @@ input:focus, select:focus, textarea:focus {
 
 /* تنسيق الفوتر (التذييل) */
 footer {
-    background-color: #2a6e3f;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* التنسيق الخاص بالصفحات */
-.container {
-    padding: 40px 20px;
-    margin-top: 100px;
-}
-
-.mt-4 {
-    margin-top: 40px;
-}
-
-.mt-5 {
-    margin-top: 50px;
-}
-
-.m-3 {
-    margin: 20px;
-}
-
-/* تنسيق النصوص */
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-/* تحسين التنسيق على الشاشات الصغيرة */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-
-    .card {
-        margin-bottom: 15px;
-    }
-
-    .profile-header h2 {
-        font-size: 1.8rem;
-    }
-
-    .container {
-        padding: 20px;
-    }
-}
-
-/* إضافة التأثيرات */
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-/* تأثير الحركات على الصفحة الرئيسية */
-.card, .profile-header, .container {
-    animation: slideInRight 0.5s ease-out;
-}
-
-/* تحسين التصميم الخاص بالخطوط */
-h1, h2, h3, h4 {
-    font-family: 'Tajawal', sans-serif;
-    font-weight: bold;
-    color: #2a6e3f;
-}
-
-/* تحسين الخطوط للأزرار */
-button, .btn {
-    font-family: 'Tajawal', sans-serif;
-    font-weight: bold;
-}
-
-/* تحريك الأزرار */
-button:hover, .btn:hover {
-    background-color: #215c32;
-    transform: scale(1.05);
-}
-
-/* تصميم شريط التمرير */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #2a6e3f;
-    border-radius: 10px;
-}
-
-/* إضافة تأثير التفاعل مع المدخلات */
-input, select, textarea {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1rem;
-    padding: 12px;
-    margin: 12px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    transition: all 0.3s;
-}
-
-input:focus, select:focus, textarea:focus {
-    border-color: #2a6e3f;
-    outline: none;
-    background-color: #f9f9f9;
-}
-/* تنسيق الفوتر (التذييل) */
-footer {
     background-color: #2a6e3f; /* تغيير اللون الخلفي ليتماشى مع باقي الموقع */
     color: white;
     text-align: center;
@@ -287,6 +161,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل للتذييل */
 }
 
 footer p {
@@ -315,8 +190,6 @@ footer nav a:focus {
     outline: none;
     color: #215c32;
 }
-
-
 
 /* تحسين التنسيق داخل البطاقات */
 .card {
@@ -376,3 +249,88 @@ footer {
 h2 {
     margin-bottom: 20px;
 }
+
+/* تحسين التنسيق على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .profile-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+}
+
+/* إضافة التأثيرات */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* تأثير الحركات على الصفحة الرئيسية */
+.card, .profile-header, .container {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* تحسين التصميم الخاص بالخطوط */
+h1, h2, h3, h4 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    color: #2a6e3f;
+}
+
+/* تحسين الخطوط للأزرار */
+button, .btn {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+}
+
+/* تحريك الأزرار */
+button:hover, .btn:hover {
+    background-color: #215c32;
+    transform: scale(1.05);
+}
+
+/* تصميم شريط التمرير */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a6e3f;
+    border-radius: 10px;
+}
+
+/* إضافة تأثير التفاعل مع المدخلات */
+input, select, textarea {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.
