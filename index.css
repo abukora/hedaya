@@ -199,6 +199,7 @@ form input:focus, form textarea:focus {
 }
 
 /* الفوتر */
+/* الفوتر */
 footer {
     background-color: var(--main-color);
     color: white;
@@ -207,13 +208,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 999; /* جعل الفوتر في الأسفل */
+    z-index: 999;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
 
 /* تحسين التصميم للشاشات الصغيرة */
 @media (max-width: 768px) {
