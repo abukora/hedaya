@@ -240,7 +240,7 @@ footer p {
     padding: 10px 0;
     overflow: hidden;
     position: fixed;
-    top: 50px;  /* ضبط المسافة بين الشريط والرأس */
+    top: 70px;  /* ضبط المسافة بين الشريط والرأس */
     left: 0;
     width: 100%;
     z-index: 1000; /* تأكد من ظهور الشريط فوق باقي المحتويات */
