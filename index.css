@@ -249,7 +249,7 @@ footer p {
     position: fixed;
     top: 100px;  /* ضبط المسافة بين الرأس والشريط */
     left: 0;
-    width: 100%;
+    width: 90%;
     z-index: 1000; /* تأكد من ظهور الشريط فوق باقي المحتويات */
     font-family: Arial, sans-serif; /* الخط المستخدم في الشريط */
     font-size: 1.2rem;
